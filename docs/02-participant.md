@@ -36,5 +36,5 @@ Then we’ll provide the steps to create our first Fabric network and the requir
 
 Note that you can, if you want create, a new Participant Organization called partorg2 as you did with partorg1.
 
-Next [03-FabricNetwork.md](03-FabricNetwork.md)
+Next [configuration.md](03-configuration.md)
 

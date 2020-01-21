@@ -20,7 +20,7 @@ Remember that you need some prerequisites before doing that workshop :
 
 ## Table of Contents
 
-1. Creation of the Blockchain Network  [01-create.md](docs/01-create.md)
+1. Creation of the Blockchain Network (founder)  [create.md](docs/01-create.md), (participant)  [participant.md](docs/02-participant.md),(configurations)  [configuration.md](docs/03-configuration.md)
 
 ## Feedback
 
