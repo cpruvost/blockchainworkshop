@@ -9,6 +9,7 @@ The steps are :
 - Deploy the Go Chain Code and expose it via REST nodes.
 - Call the Chain Code via REST Service with POSTMAN.
 - Call the Chain Code using the Java SDK and VSCode.
+- Optional : Use Infra As Code to create Oracle Blockchain Network
 
 Do not hesitate to use it and ask for enhancements if you have any ideas.
 
@@ -25,6 +26,8 @@ Remember that you need some prerequisites before doing that workshop :
 1. Creation of the Blockchain Network (founder)  [create.md](docs/01-create.md), (participant)  [participant.md](docs/02-participant.md),(configurations)  [configuration.md](docs/03-configuration.md)
 2. Deploy Chaincode [deploychaincode.md](docs/04-deploychaincode.md)
 3. Invoke Chaincode via REST API [restapi.md](docs/05-restapi.md)
+4. Invoke Chaincode via Java SDK [javasdk.md](docs/06-javasdk.md)
+5. Optional : Use Infra As Code to create Oracle Blockchain Network [iac.md](docs/07-iac.md) [Under Construction]
 
 ## Feedback
 
