@@ -1,4 +1,4 @@
-# Oracle BlockChain (Hyperledger) Cloud Service Workshop [ON CONSTRUCTION]
+# Oracle BlockChain (Hyperledger) Cloud Service Workshop
 
 This workshop guides you through the setup, and the configuration of an Oracle Blockchain Network (Hyperledger) in order to deploy a Chain Code (using Go language) and to be able to call it via Rest Service (using Postman) or via the Hyperledger Java SDK  .
 
