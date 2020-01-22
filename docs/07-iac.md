@@ -1,4 +1,4 @@
-# Use Infra As Code to create Oracle Blockchain Network (Under Construction)
+# Use Infra As Code to create Oracle Blockchain Network
 
 The first step is to install the Paas Service Manager CLI (psm CLI)
 
@@ -83,3 +83,53 @@ AVAILABLE COMMANDS
   o help
        Show help
 ```
+
+Now we will create a new founder called "myiacfounder"
+
+First we have to create a json file (create-service-payload.json) containing parameters. See below an example
+
+```
+{
+"serviceName": "myiacfounder",
+"appSize":"Developer",
+"serviceLevel": "PAAS",
+"region":"eu-frankfurt-1",
+"organizationType": "true",
+"numberOfPeersDev": "2",
+"managedSystemType": "oracle",
+"enableNotification":"true",
+"notificationEmail":"christophe.pruvost@oracle.com"
+}
+```
+
+Now we use psm.
+
+```
+psm OABCSINST create-service -c ./create-service-payload.json 
+ Message:    Submitted job to create service [myiacfounder] in domain [idcs-40e2d2239516421bb71b0bb09597c4fa].
+ Job ID:     173500923
+```
+
+We can check the status of the job
+
+```
+psm OABCSINST operation-status -j 173500923
+ Service:           myiacfounder
+ Operation Type:    CREATE_SERVICE
+ Status:            RUNNING
+ Start Time:        2020-01-22T15:26:24.375+0000
+ End Time:          N/A
+```
+
+And using jq we get only the status
+
+```
+psm OABCSINST operation-status -j 173500923 -of json | jq ."status"
+FAILED
+```
+
+Ok it failed ...so let's go in the console and look at the error message....
+
+![Failed Creation](images/07-iac2.png)
+
+No need to continue, the goal was that you understand how to do Infra As Code with Oracle Cloud...:o)

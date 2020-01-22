@@ -27,7 +27,7 @@ Remember that you need some prerequisites before doing that workshop :
 2. Deploy Chaincode [deploychaincode.md](docs/04-deploychaincode.md)
 3. Invoke Chaincode via REST API [restapi.md](docs/05-restapi.md)
 4. Invoke Chaincode via Java SDK [javasdk.md](docs/06-javasdk.md)
-5. Optional : Use Infra As Code to create Oracle Blockchain Network [iac.md](docs/07-iac.md) [Under Construction]
+5. Optional : Use Infra As Code to create Oracle Blockchain Network [iac.md](docs/07-iac.md)
 
 ## Feedback
 
