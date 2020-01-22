@@ -181,7 +181,7 @@ func (t *SimpleChaincode) query(stub shim.ChaincodeStubInterface, args []string)
 }
 
 // ===========================================================================================
-// getHistoryForRecord returns the histotical state transitions for a given key of a record
+// getHistoryForRecord returns the historical state transitions for a given key of a record
 // ===========================================================================================
 func (t *SimpleChaincode) getHistoryForRecord(stub shim.ChaincodeStubInterface, args []string) pb.Response {
 

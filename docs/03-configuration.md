@@ -234,4 +234,4 @@ You can create as many channels as you need as well as add as many peer  nodes a
 
 That’s it. After the completion of all the steps above, our Blockchain network consortium will be configured and ready to our next step — the  chaincode (smart contract) deployment.
 
-Next  [04-devcs-patch.md](04-devcs-patch.md)
+Next  [deploychaincode.md](04-deploychaincode.md)
