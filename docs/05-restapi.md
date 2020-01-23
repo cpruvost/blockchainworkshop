@@ -107,7 +107,7 @@ Now you can go on your network for ex "myfounderch1" for me. Then you will see y
 
 If you click to see the details you will have the initiator of the transaction. On the screen for me it is CP_Tester because I do not use as you my Oracle Cloud Account but a user that I created before. You will not do that on that workshop but I want to show you that the users of your application working with Oracle Blockchain are under surveillance too....:o).
 
-I can go on the User Management in the web console
+I can go on the User Management in the web console (Do not that yourself...just read)
 
 ![Rest Proxy Node 1](images/05-restapi6.png)
 
@@ -116,6 +116,10 @@ I click on CP_Tester in order to see the security roles on Blockchain
 ![Rest Proxy Node 1](images/05-restapi7.png)
 
 Note that all what you see before (blochain network, users and the roles associated) can be created using "Infrastructure As Code" (REST API, or Oracle Cloud CLI).
+
+At the end you can invoke the function getHistoryForRecord on the account  "a" and see that the Blockchain has stored all the values from the start. 
+
+![Rest Proxy Node 1](images/05-restapi8.png)
 
 Next [javasdk.md](06-javasdk.md)
 
