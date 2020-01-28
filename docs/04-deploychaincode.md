@@ -4,6 +4,8 @@ Before beginning you have to check that your Visual Studio Code can be used to d
 
 Get the code by cloning the github project cpruvost/blockchainworkshop
 
+Note that the directory obcsworkshop/go should be added in your GOPATH env variable.
+
 Open VSCode and then in the menu File / Open Folder --> Choose the directory 'balancetransfer'
 
 In this directory you have the chain code "balancetransfer.go". It is a standard exemple used with hyperledger.  

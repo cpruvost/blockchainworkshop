@@ -1,2 +1,7 @@
 network.yaml
 artifacts/
+generator/
+github.com/
+gopkg.in/
+go/bin/
+go/pkg/
