@@ -38,4 +38,4 @@ You have created the Student..now do that again but use the function readStudent
 
 It is really nice to be able to do a real local test like that with Hyperledger to check that all is good. You can deploy your chaincode now on Oracle Blockchain Platform if you want. Be carefull, the main function is in main.go so you have to put the 2 files chaincode.go and main.go in the zip before install it.
 
-The end...:o) 
+Next [Chaincode Generator](09-generator.md)

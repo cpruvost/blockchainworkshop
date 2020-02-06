@@ -92,7 +92,7 @@ func (cc *Chaincode) Invoke(stub shim.ChaincodeStubInterface) sc.Response {
 }
 
 // ============================================================
-// initStuent - create a new student , store into chaincode state
+// initStudent - create a new student , store into chaincode state
 // ============================================================
 func (cc *Chaincode) initStudent(stub shim.ChaincodeStubInterface, args []string) sc.Response {
 	var err error
