@@ -24,8 +24,8 @@ Ex For me
 **After Look at the Generators Parameters**
 
 ```
-@AutoReleaseUpdate:true --> the number of version is incremented each time you run the generator
-@GenerateInDirectories:true
+@AutoReleaseUpdate:true --> the number of version is incremented each time you run the generator. Do not update for the moment.
+@GenerateInDirectories:true --> Do not update for the moment.
 @StringArraySeparator:+ --> if a field is a string array then this is the array separator
 @RequireReason:true --> the generator ask you to write a reason each time you run it
 @VerbosityLevel:1 --> the level of verbosity mainly use by lionel who has developed the generator
