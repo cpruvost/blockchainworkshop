@@ -1,8 +1,10 @@
 # Use the Chaincode Generator of Oracle Experts
 
+Thank you to Lionel Martinez, our EMEA Blockchain Specialist that spent time in order to imagine and develop this generator !!!
+
 First you have to understand important things :
 
-- The source code of the Chaincode Generator is not public (so not in this github project) and you cannot have the source except may be by working with Oracle Consulting.
+- The source code of the Chaincode Generator is not public (so not in this github project) and you cannot have the source except may be by working with Oracle Consulting. 
 - The exe file of the Chaincode Generator is not public (so not in this github project). If someone from Oracle  give you this exe file for a reason that can be (Test, Demo, Poc, Workshop, ..) then you must keep it only for yourself. 
 
 So now I can explain how to use it and you will see that you can save a lot of time with it.
