@@ -1,0 +1,150 @@
+#   __   ___  ___  ___  __   ___       __   ___    ___  ___  __  ___ 
+#  |__) |__  |__  |__  |__) |__  |\ | /  ` |__      |  |__  /__`  |  
+#  |  \ |___ |    |___ |  \ |___ | \| \__, |___     |  |___ .__/  |  
+#                                                                    
+
+# SPEC-FILE syntax
+# <objectTypeName>   { :variableType: variableName: {N/A|KEY|IDX}}+
+#                                                  ^ this is the mode ^ 
+# Soon to come:
+# $ENTITY:<EntityName>: to be defined better...
+#
+# Notes:
+#   First letter of Entity name should be Uppercase
+#   First letter of variable name should be Uppercase
+#   Variable Type is one of: string, int, bool, strarray[.]// TODO make a real list
+
+#############################################################"
+#
+# Project Information
+#
+#############################################################"
+@Project:CheckCVGen
+@Author:christophe.pruvost@oracle.com
+@Release:v1.0.011
+# changes the spec-file to update the release number at each generation
+# adds .001 if the end of the current release is not .[0-9][0-9][0-9]
+# else increments the last 3 digits
+
+#############################################################"
+#
+# Generator Parameters
+#
+#############################################################"
+@AutoReleaseUpdate:true
+@GenerateInDirectories:true
+@StringArraySeparator:;
+@RequireReason:true
+@VerbosityLevel:1
+
+#############################################################"
+#
+# Configuration Parameters
+#
+#############################################################"
+@TestChannelName:myfounderch2
+@TestChaincodeName:CheckCVGenCC
+
+@TestUser:christophe.pruvost@oracle.com
+@TestPassword:OracleCloud4123
+
+@DeployUser:christophe.pruvost@oracle.com
+@DeployPassword:OracleCloud4123
+
+@TestURLQuery:https://630336BD1C33415FB50CBE3CFDA91D30.blockchain.ocp.oraclecloud.com:443/restproxy1/bcsgw/rest/v1/transaction/query
+@TestURLInvoke:https://630336BD1C33415FB50CBE3CFDA91D30.blockchain.ocp.oraclecloud.com:443/restproxy1/bcsgw/rest/v1/transaction/invocation
+
+@DeployURLRoot:https://630336BD1C33415FB50CBE3CFDA91D30.blockchain.ocp.oraclecloud.com:443
+
+@DeployPeersURLs: \
+    grpcs://99A530A2278C477DA9DE6557B4983B6B-private.blockchain.ocp.oraclecloud.com:7100 ; \
+   	grpcs://99A530A2278C477DA9DE6557B4983B6B-private.blockchain.ocp.oraclecloud.com:7102
+
+#############################################################"
+#
+# Entities declarations and test specifications
+#
+#############################################################"
+Diploma: \
+    string:DocType:IDX: \
+    string:DiplomaID:KEY: \	
+    string:StudentID:IDX: \
+    string:Name:N/A: \
+    string:Year:N/A: \
+    string:Mention:N/A: \
+    string:SchoolShort:IDX: \
+    string:SchoolLong:N/A: \	 
+    string:SchoolStreet:N/A: \
+    string:SchoolZip:N/A: \
+    string:SchoolTown:N/A: \
+    string:FileName:N/A
+#############################################################"
+$TEST:Comment: Diploma's tests
+$TEST:Call:createDiploma:Diploma:dip00001:stud00001:Ingénieur Généraliste Numérique:2020:Bien:ESILV:Ecole Supérieure d’Ingénieurs Léonard de Vinci:12 avenue Léonard de Vinci:92400:Courbevoie:xusad-vyfar DiplomeStud1-2020-01-31T10_49_54+01_00- [KeeeX].pdf
+$TEST:Call:createDiploma:Diploma:dip00002:stud00002:Ingénieur Généraliste Numérique:2020:Bien:ESILV:Ecole Supérieure d’Ingénieurs Léonard de Vinci:11 avenue Léonard de Vinci:92400:Courbevoie:xozoc-dehuc DiplomeStud2-2020-01-31T10_57_10+01_00- [KeeeX].pdf
+$TEST:Call:createDiploma:Diploma:dip00003:stud00003:Ingénieur Généraliste Numérique:2020:Bien:ESILV:Ecole Supérieure d’Ingénieurs Léonard de Vinci:12 avenue Léonard de Vinci:92400:Courbevoie:xogek-kinut DiplomeCP-2019-12-06T12_50_40+01_00- [KeeeX].pdf
+$TEST:Comment: Diplomas are created
+$TEST:Call:getDiploma:dip00001
+$TEST:Call:getDiploma:dip00002
+$TEST:Call:getDiploma:dip00003
+$TEST:Call:getDiplomaHistory:dip00001
+$TEST:Call:getDiplomaHistory:dip00002
+$TEST:Call:getDiplomaHistory:dip00003
+$TEST:Call:createDiploma:Diploma:dip00002:stud00002:Ingénieur Généraliste Numérique:2020:Bien:ESILV:Ecole Supérieure d’Ingénieurs Léonard de Vinci:12 avenue Léonard de Vinci:92400:Courbevoie
+$TEST:Call:getDiplomaHistory:dip00002
+$TEST:Call:findDiplomaByStudentID:stud00001
+$TEST:Call:findDiplomaBySchoolShort:ESILV
+$TEST:Call:findDiplomaByDocType:Diploma
+#############################################################"
+Record: \
+    string:DocType:IDX: \
+    string:RecordID:KEY: \	
+    string:StudentID:IDX: \
+    string:DiplomaID:IDX: \
+    string:Discipline:N/A: \
+    string:Mark:N/A
+#############################################################"
+$TEST:Comment: Record's tests
+$TEST:Call:createRecord:Record:dip00001R1:stud00001:dip00001:Machine Learning & data science:12/20
+$TEST:Call:createRecord:Record:dip00001R2:stud00001:dip00001:Intelligence Artificielle:15/20
+$TEST:Call:createRecord:Record:dip00001R3:stud00001:dip00001:Développement d’applications avancé:18/20
+$TEST:Call:getRecord:dip00001R1
+$TEST:Call:getRecord:dip00001R2
+$TEST:Call:getRecord:dip00001R3
+$TEST:Call:getRecordHistory:dip00001R1
+$TEST:Call:getRecordHistory:dip00001R2
+$TEST:Call:getRecordHistory:dip00001R3
+$TEST:Call:createRecord:Record:dip00001R2:stud00001:dip00001:Intelligence Artificielle:14/20
+$TEST:Call:getRecordHistory:dip00001R2
+$TEST:Call:findRecordByDocType:Record
+$TEST:Call:findRecordByStudentID:stud00001
+$TEST:Call:findRecordByDiplomaID:dip00001
+#############################################################"
+Placement: \
+    string:DocType:IDX: \
+    string:PlacementID:KEY: \	
+    string:StudentID:IDX: \
+    string:Where:IDX: \
+    string:StartDate:N/A: \
+    string:EndDate:N/A: \
+    string:FileName:N/A
+#############################################################"
+$TEST:Comment: Placement's tests
+$TEST:Call:createPlacement:Placement:plac00001:stud00001:OFPPT:01/01/2020:31/01/2020:xomev-hivab StageStud1-2020-01-31T14_51_21+01_00- [KeeeX].pdf
+$TEST:Call:createPlacement:Placement:plac00002:stud00002:OFPPT:01/01/2020:30/01/2020:xomah-kyfyl StageStud2-2020-01-31T14_51_47+01_00- [KeeeX].pdf
+$TEST:Call:createPlacement:Placement:plac00003:stud00003:OFPPT:01/01/2020:31/01/2020:xozat-zuret StageCP-2020-01-31T14_51_03+01_00- [KeeeX].pdf
+$TEST:Call:getPlacement:plac00001
+$TEST:Call:getPlacement:plac00002
+$TEST:Call:getPlacement:plac00003
+$TEST:Call:getPlacementHistory:plac00001
+$TEST:Call:getPlacementHistory:plac00002
+$TEST:Call:getPlacementHistory:plac00003
+$TEST:Call:createPlacement:Placement:plac00002:stud00002:OFPPT:01/01/2020:31/01/2020:xomah-kyfyl StageStud2-2020-01-31T14_51_47+01_00- [KeeeX].pdf
+$TEST:Call:getPlacementHistory:plac00002
+$TEST:Call:findPlacementByDocType:Placement
+$TEST:Call:findPlacementByStudentID:stud00001
+$TEST:Call:findPlacementByWhere:OFPPT
+
+### All data below are for tests... ##
+##/!\ CAUTION, URLs contains colons(:) so they are separated by semi-colons (;)
+##@DeployPeersURLs:   \

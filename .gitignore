@@ -1,7 +1,9 @@
 network.yaml
 artifacts/
-generator/
+generator/*
 github.com/
 gopkg.in/
 go/bin/
 go/pkg/
+!spec-file.txt
+!spec-file-another-sample.txt
