@@ -8,17 +8,19 @@ Go in the web console and click on Developer Tools / Application Development
 
 ![Java SDK Security Files](images/06-javasdk.png)
 
-Click on OBP (Download the development package) and save the file on your laptop
+Click on OBP (Download the development package) and save the file on your laptop. For ex in the directory /home/Downloads.
 
 ![Java SDK Security Files](images/06-javasdk2.png)
 
-The zip file contains directories and files mandatory for your Java SDK code.
+The zip file contains directories and files mandatory for your Java SDK code. Now unzip it in the /home/Downloads.
 
 ![Java SDK Security Files](images/06-javasdk3.png)
 
-Unzip the file in the project directory that you got from github like below for the file network.yaml and the directory artifacts 
+Copy the file network.yaml in your directory obcsworkshop (of the github project you cloned).
 
 ![Java SDK Security Files](images/06-javasdk4.png)
+
+Copy the directory artifacts in the obcsworkshop/java.
 
 ![Java SDK Security Files](images/06-javasdk5.png)
 
@@ -42,7 +44,7 @@ Query payload of b from peer myfounderpeer1 returned 54
 54
 ```
 
-If you have errors then find in the code where is the problem :o)
+If you have errors then find in the code where is the problem :o). Remember you need to have maven installed so if you see ' mvn: command not found' then it is because maven is not there.
 
 Have a nice day...your Blockchain projects can start now :o) 
 

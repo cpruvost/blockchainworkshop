@@ -14,11 +14,14 @@ The steps are :
 Do not hesitate to use it and ask for enhancements if you have any ideas.
 
 Remember that you need some prerequisites before doing that workshop :
+- Be comfortable with linux directly on your laptop or on an ubuntu virtual box vm for ex.
 - Be able to code using Go and Java.
-- Be able to use git and github
-- Be able to use Visual Studio Code (VSCode) with Java and Go.
-- Be able to use POSTMAN (prefer standalone tool) in order to call REST API.
+- Be able to use git and github.
+- Be able to use Visual Studio Code (VSCode) with Java (+ maven) and Go.
+- Be able to use POSTMAN (prefer standalone tool) and curl in order to call REST API.
 - Understand basics on Hyperledger (this workshop does not explain the Blockchain technology and Hyperledger).
+
+So you must understand that, before beginning, you have to be ready with all that products already installed. 
 
 
 ## Table of Contents

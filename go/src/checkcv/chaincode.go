@@ -56,7 +56,7 @@ type student struct {
 type diploma struct {
 	ObjectType string `json:"docType"` //docType is used to distinguish the various types of objects in state database
 	DiplomaID  string `json:"diplomaID"`
-	Name       string `json:"name"`
+	Name       string `json:"name"` //actually it is not the name it is a pseudonym...impossible to use the name cause RGPD
 	Owner      string `json:"owner"`
 	Year       string `json:"year"`
 	Mention    string `json:"mention"`
