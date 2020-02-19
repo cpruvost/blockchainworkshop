@@ -32,11 +32,11 @@ Below we have an example URL:
 
 https://630336BD1C33415FB50CBE3CFDA91D30.blockchain.ocp.oraclecloud.com:443/restproxy1
 
-**How to use the Postman tool to perform REST API calls against OBCS**
+**How to use the Postman tool and curl to perform REST API calls against OBCS**
 
 We will use Postman. It’s a REST tool you can install as a [Google Chrome plug-in ](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)for example or as a [standalone tool](https://www.getpostman.com/downloads/) (= the better choice). It’s up to you to decide which one is the best option for you. Install and start Postman.
 
-You can use use [curl](https://curl.haxx.se/), a command-line (CLI) tool.
+We will use [curl](https://curl.haxx.se/) too, a command-line (CLI) tool.
 
 The first call we’ll perform will be just a call to check the Oracle  Blockchain Cloud Service version. Below we have what this call looks  like in plain curl syntax. You need to provide your <user_name> as well as your <password> in the call below:
 
