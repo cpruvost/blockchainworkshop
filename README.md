@@ -33,6 +33,7 @@ So you must understand that, before beginning, you have to be ready with all tha
 5. Optional : Use Infra As Code to create Oracle Blockchain Network [iac.md](docs/07-iac.md)
 6. Optional : Use IBM Blockchain Platform Extension in VSCode [ibmbp.md](docs/08-ibmbp.md)
 7. Optional : Use the Chaincode Generator of Oracle Experts [generator.md](docs/09-generator.md)
+8. Optional : Rich History [richhistory.md](docs/10-richhistory.md)
 
 ## Feedback
 
