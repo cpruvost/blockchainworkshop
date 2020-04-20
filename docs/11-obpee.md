@@ -27,6 +27,8 @@ For the version v.3.1 note some information :
 
   ![Fqdn](images/11-obpee3.png)
 
+- page 20 : before click on service console, please add in your hosts local file : public_ip_address Internal_FQN because your laptop does not see the Internal FQDN.
+
 Then follow now the step 2 Deploy the chaincode and adapt the tutorial to this context OBPEE.
 
 The end...:o) 
