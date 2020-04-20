@@ -21,7 +21,7 @@
 #############################################################"
 @Project:CheckCVGen
 @Author:christophe.pruvost@oracle.com
-@Release:v1.0.011
+@Release:v1.0.012
 # changes the spec-file to update the release number at each generation
 # adds .001 if the end of the current release is not .[0-9][0-9][0-9]
 # else increments the last 3 digits
@@ -46,10 +46,10 @@
 @TestChaincodeName:CheckCVGenCC
 
 @TestUser:christophe.pruvost@oracle.com
-@TestPassword:OracleCloud4123
+@TestPassword:OracleCloud4123!
 
 @DeployUser:christophe.pruvost@oracle.com
-@DeployPassword:OracleCloud4123
+@DeployPassword:OracleCloud4123!
 
 @TestURLQuery:https://630336BD1C33415FB50CBE3CFDA91D30.blockchain.ocp.oraclecloud.com:443/restproxy1/bcsgw/rest/v1/transaction/query
 @TestURLInvoke:https://630336BD1C33415FB50CBE3CFDA91D30.blockchain.ocp.oraclecloud.com:443/restproxy1/bcsgw/rest/v1/transaction/invocation

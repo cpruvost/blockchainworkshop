@@ -83,7 +83,7 @@ Now you can use standard tools to query your data and do nice data analysis. For
 
   ![rich history](images/10-richhistory9.png)
 
-The end...:o) 
+Next [Oracle Blockchain Platform Enterprise Edition](10-obpee.md)
 
 
 

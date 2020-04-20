@@ -34,6 +34,7 @@ So you must understand that, before beginning, you have to be ready with all tha
 6. Optional : Use IBM Blockchain Platform Extension in VSCode [ibmbp.md](docs/08-ibmbp.md)
 7. Optional : Use the Chaincode Generator of Oracle Experts [generator.md](docs/09-generator.md)
 8. Optional : Rich History [richhistory.md](docs/10-richhistory.md)
+9. Optional : Oracle Blockchain Platform Enterprise Edition [obpee.md](docs/11-obpee.md)
 
 ## Feedback
 

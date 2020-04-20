@@ -170,3 +170,4 @@ So just run ths script : test-CheckCVGenv1.0.010-CheckCVGenCC.bash
 
 Ok all is good. You can now develop the new version of your chaincode (it means you update the spec-file.txt) and follow the same steps again and again... 
 
+Next [Rich History](09-richhistory.md)
