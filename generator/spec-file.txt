@@ -21,7 +21,7 @@
 #############################################################"
 @Project:CheckCVGen
 @Author:christophe.pruvost@oracle.com
-@Release:v1.0.012
+@Release:v1.0.013
 # changes the spec-file to update the release number at each generation
 # adds .001 if the end of the current release is not .[0-9][0-9][0-9]
 # else increments the last 3 digits

@@ -31,6 +31,28 @@ For the version v.3.1 note some information :
 
 Then follow now the step 2 Deploy the chaincode and adapt the tutorial to this context OBPEE.
 
+Be carefull the requests in Postman will be then a little different compared to the requests in the point  3 of the workshop that is using Oracle Blockchain Platform instead.
+
+The query on the account A
+
+![Query](images/11-obpee4.png)
+
+The Transfer from A to B
+
+First get a Transaction Id
+
+![Query](images/11-obpee5.png)
+
+And after do the transaction using information you got before (txid, nonce)
+
+![Query](images/11-obpee6.png)
+
+Enfin Récupérer l'historique
+
+![Query](images/11-obpee7.png)
+
+Pour Info ces Urls REST et leurs paramètres sont dans la documentation de Oracle Blockchain EE sur le web...
+
 The end...:o) 
 
 
