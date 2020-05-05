@@ -31,6 +31,14 @@ For the version v.3.1 note some information :
 
 Then follow now the step 2 Deploy the chaincode and adapt the tutorial to this context OBPEE.
 
+Screen of OBPEE. You must click on Service Console.
+
+![Query](images/11-obpee8.png)
+
+Then You do a login again and got the same screen that looks like to Oracle Blockchain Platform
+
+![Query](images/11-obpee9.png)
+
 Be carefull the requests in Postman will be then a little different compared to the requests in the point  3 of the workshop that is using Oracle Blockchain Platform instead.
 
 The query on the account A
